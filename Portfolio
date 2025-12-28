@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SANKARI R - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* General Styles */
+    * {margin:0; padding:0; box-sizing:border-box; font-family:'Roboto', sans-serif;}
+    body {background:#f5f6fa; color:#2c3e50; scroll-behavior:smooth;}
+    a {text-decoration:none; color:inherit;}
+    
+    /* Header */
+    header {
+      background: linear-gradient(135deg,#0f4c75,#3282b8);
+      color:white; text-align:center; padding:80px 20px; position:relative;
+      clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
+    }
+    header h1 {font-size:3em; margin-bottom:10px;}
+    header p {font-size:1.2em; max-width:700px; margin:auto;}
+    
+    /* Navigation */
+    nav {
+      background:#fff; box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      position:sticky; top:0; z-index:100; margin-bottom:40px; border-radius:12px;
+      max-width:1000px; margin-left:auto; margin-right:auto;
+    }
+    nav ul {display:flex; justify-content:center; list-style:none; flex-wrap:wrap;}
+    nav ul li {margin:0 15px;}
+    nav ul li a {display:block; padding:12px 20px; border-radius:8px; color:#0f4c75; font-weight:500; transition:0.3s;}
+    nav ul li a:hover {background:#00bcd4; color:white;}
+    
+    /* Sections */
+    section {max-width:1000px; margin:80px auto; padding:0 20px;}
+    h2 {text-align:center; color:#0f4c75; font-size:2.2em; margin-bottom:50px; position:relative;}
+    h2::after {content:""; display:block; width:80px; height:4px; background:#00bcd4; margin:10px auto 0; border-radius:2px;}
+    
+    /* Cards */
+    .card-container {display:flex; flex-wrap:wrap; gap:25px; justify-content:center;}
+    .card {
+      background:white; padding:30px; border-radius:15px; box-shadow:0 12px 25px rgba(0,0,0,0.1);
+      flex:1 1 280px; max-width:320px; transition:transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {transform:translateY(-10px); box-shadow:0 20px 40px rgba(0,0,0,0.15);}
+    .card h3 {color:#3282b8; margin-bottom:15px; display:flex; align-items:center; gap:8px;}
+    .card p {font-size:0.95em; color:#34495e;}
+    
+    /* Contact */
+    .contact-info p {margin:12px 0; font-size:1.05em;}
+    .contact-info a {color:#00bcd4;}
+    .contact-info i {color:#3282b8; margin-right:10px;}
+    
+    /* Footer */
+    footer {background:#0f4c75; color:white; text-align:center; padding:35px 20px; margin-top:50px;}
+    
+    /* Responsive */
+    @media(max-width:768px){
+      nav ul {flex-direction:column;}
+      .card-container {flex-direction:column; align-items:center;}
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <h1>SANKARI R</h1>
+  <p>Passionate about education and administration, leveraging programming and problem-solving skills to contribute to a dynamic organization.</p>
+</header>
+
+<!-- Navigation -->
+<nav>
+  <ul>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#languages">Languages</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Skills Section -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="card-container">
+    <div class="card"><h3><i class="fa-solid fa-code"></i> C Programming</h3><p>Proficient in writing efficient and structured C programs.</p></div>
+    <div class="card"><h3><i class="fa-brands fa-python"></i> Python</h3><p>Skilled in Python for problem-solving and automation.</p></div>
+    <div class="card"><h3><i class="fa-solid fa-c"></i> C++</h3><p>Experienced in object-oriented programming using C++.</p></div>
+  </div>
+</section>
+
+<!-- Certificates Section -->
+<section id="certificates">
+  <h2>Certificates</h2>
+  <div class="card-container">
+    <div class="card"><i class="fa-solid fa-certificate"></i> C Programming Certificate</div>
+    <div class="card"><i class="fa-solid fa-certificate"></i> Python Certificate</div>
+    <div class="card"><i class="fa-solid fa-certificate"></i> C++ Certificate</div>
+  </div>
+</section>
+
+<!-- Education Section -->
+<section id="education">
+  <h2>Education</h2>
+  <div class="card-container">
+    <div class="card"><h3><i class="fa-solid fa-graduation-cap"></i> BE - CSE</h3><p>Bannari Amman Institute of Technology, Erode</p></div>
+    <div class="card"><h3><i class="fa-solid fa-school"></i> 12th</h3><p>Sowdambikaa Girls Hr. Sec School, Thuraiyur</p></div>
+    <div class="card"><h3><i class="fa-solid fa-school"></i> 10th</h3><p>Sowdambikaa Girls Hr. Sec School, Thuraiyur</p></div>
+  </div>
+</section>
+
+<!-- Languages Section -->
+<section id="languages">
+  <h2>Languages</h2>
+  <div class="card-container">
+    <div class="card"><i class="fa-solid fa-language"></i> English - Working Knowledge</div>
+    <div class="card"><i class="fa-solid fa-language"></i> Hindi - Read & Write</div>
+    <div class="card"><i class="fa-solid fa-language"></i> Tamil - Read, Write & Speak (Native)</div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="card contact-info">
+    <p><i class="fa-solid fa-envelope"></i>Email: <a href="mailto:sankariraja2712@gmail.com">sankariraja2712@gmail.com</a></p>
+    <p><i class="fa-solid fa-phone"></i>Phone: <a href="tel:+919345039060">+91 9345039060</a></p>
+    <p><i class="fa-brands fa-github"></i>GitHub: <a href="https://github.com/login" target="_blank">github.com/login</a></p>
+    <p><i class="fa-brands fa-linkedin"></i>LinkedIn: <a href="https://www.linkedin.com/in/sankari-raja-aa4714355" target="_blank">linkedin.com/in/sankari-raja-aa4714355</a></p>
+    <p><i class="fa-solid fa-location-dot"></i>Address: Thiyagi Singaravellar St., Thuraiyur, Trichy, India</p>
+    <p>Nationality: Indian | Gender: Female | DOB: 27-12-2006</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 SANKARI R. All rights reserved.</p>
+  <p>Declaration: I hereby declare that all the above-provided information is true to the best of my knowledge.</p>
+</footer>
+
+</body>
+</html>
